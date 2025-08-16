@@ -1,0 +1,171 @@
+Utils:
+  compra: COMPRA #ANUNCIAR OU COMPRA
+  Pontos: true 
+  Money: false
+  
+#Preço em pontos que há facção terar que pagar 
+Upgrades:
+  NivelI: 
+    preco: 250.0
+    minutosGanhos: 60
+    
+  NivelII: 
+    preco: 450.0
+    minutosGanhos: 120 
+    
+  NivelIII:
+    preco: 750.0
+    minutosGanhos: 180 #Caso tenha 60 nos minutos do NivelII bote o dobro para colocar 1 hora ai no caso os 60 viraria segundos para o Nivel3 
+    
+Escudo:
+  ComprarEscudo: 250.0 #Preço default de compra
+  Duracao: 60 #Duração default do escudo em minutos.
+
+Mensagens:
+  ActionBar: '&a+{quantia} Pontos'
+  EscudoComprado: '&a[{tag}] Yeah! Um escudo foi comprado para sua facção'
+  EscudoTerminou: '&c[{tag}] Oh! O escudo da sua facção terminou'
+  TentandoAtaque: '&a[Escudo] Ei, Alguma facção esta tentando colocar em ataque'
+  EscudoAnunciar-Tittle: '&aEscudo comprado' #Tittle
+  EscudoAnunciar-SubTittle: '&7pela [{tag}]'
+
+Permissões:
+  pontos: 'ndfshield.pontosadm'
+  pontos-ver: 'ndfshield.pontosver'
+  verificar: 'fshield.verifyvip'
+
+Menu:
+  principal:
+    tamanho: 45 #tamanho do menu
+    nome-menu: "Escudo - [{tag}]" #nome do menu
+    faccao:
+      name: "&a[{tag}] - {faccao}"
+      lore:
+        - "&fPoder: &7{poder}"
+        - "&fPontos: &7{pontos}"
+      Slot: 13 
+      
+    top:
+      name: "&aTop Pontos"
+      lore:
+        - "&7Clique para ver as"
+        - "&7facções com mais pontos."
+      type: HEAD # MATERIAL OU HEAD
+      material: POTION
+      head: "818f83eb64f438e3f6ae3a5c2dea8ed10303bad85ac34a798659a275aa096506"        
+      Slot: 11
+      
+    melhorias:
+      name: "&aUpgrades"
+      lore:
+        - "&7Clique para ver as melhorias do seu escudo"
+        - "&7e proteja seus spawners por mais tempo."
+      type: MATERIAL # MATERIAL OU HEAD
+      material: POTION
+      head: "41d4791f3b9a5ea4bfaadcd779b51642d4930a23599b9347a3375d3b2721d"        
+      Slot: 29
+      
+    escudoComprar:
+      name: "&aComprar Escudo"
+      lore:
+        - "&7Clique aqui e realize a compra de um escudo"
+        - "&7e proteja seus spawners durante &f3 horas"
+        - ""
+        - "{status}"
+      type: MATERIAL # MATERIAL OU HEAD
+      material: GOLD_INGOT
+      head: "41d4791f3b9a5ea4bfaadcd779b51642d4930a23599b9347a3375d3b2721d"        
+      Slot: 31
+      
+    escudoStatus:
+      name: "&aStatus do Escudo"
+      lore:
+        - "&7Status: {status}"
+        - ""
+        - "{duracao}"
+      type: MATERIAL # MATERIAL OU HEAD
+      material: COMPASS
+      head: "41d4791f3b9a5ea4bfaadcd779b51642d4930a23599b9347a3375d3b2721d"        
+      Slot: 33
+      
+  Upgrades:
+    tamanho: 27
+    name: "Upgrades Escudo - [{tag}]"
+    NivelI: 
+      name: "&aUpgrade I"
+      lore:
+        - "&7Com este upgrade sua facção tera"
+        - "&7uma hora a mais de Escudo."
+        - ""
+        - "{status}"     
+      Slot: 12
+      
+    NivelII:
+      name: "&aUpgrade II"
+      lore:
+        - "&7Com este upgrade sua facção tera"
+        - "&7duas horas a mais de Escudo."
+        - ""
+        - "{status}"            
+      Slot: 13
+      
+    NivelIII: 
+      name: "&aUpgrade III"
+      lore:
+        - "&7Com este upgrade sua facção tera"
+        - "&7três horas a mais de Escudo."
+        - ""
+        - "{status}"            
+      Slot: 14
+    
+  Verificar:
+    tamanho: 27
+    name: "Verificar Escudo"  
+    menu:
+      name: "§a[{tag}] - {nome}"
+      lore:
+        - ""
+        - "&7Status: {status}"
+      Slot: 13    
+      
+#Ao matar um mob Adiciona Pontos a Facção  
+Mobs: # MOB:QUANTIDADE:CHANCE
+  - 'ZOMBIE:0.5:100'
+  - 'CREEPER:1.0:50'
+  - 'SKELETON:0.8:75'
+
+#Formatação de pontos
+Formatação:
+  - ''
+  - 'k'
+  - 'M'
+  - 'B'
+  - 'T'
+  - 'Q'
+  - 'QQ'
+  - 'S' 
+  - 'SS'
+  - 'OC'
+  - 'N'
+  - 'D'
+  - 'UN'
+  - 'DD'
+  - 'TR'
+  - 'QT'
+  - 'QN'
+  - 'SD'
+  - 'SPD'
+  - 'OD'
+  - 'ND'
+  - 'VG'
+  - 'UVG' 
+  - 'DVG'
+  - 'TVG'
+  - 'QTV'
+  - 'QNV'
+  - 'SEV'
+  - 'SPV'
+  - 'OVG'
+  - 'NVG'
+  - 'TG'
+  
